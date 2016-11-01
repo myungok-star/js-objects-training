@@ -34,3 +34,11 @@
 */
 
 // YOUR CODE HERE
+
+function daysUntilDate(string) {
+  var someDate = Date.parse(string);
+  var today = Date.now();
+  var day = 1000*60*60*24;
+  return (someDate - today)/day;
+}
+return birthdayReminder()

@@ -31,3 +31,16 @@
 */
 
 // YOUR CODE HERE
+
+function letterCount(string) {
+// get the output within {}
+  var letters = {};
+  // split the string into each letter
+  var characters = string.split("");
+  //go over each element to count 
+  string.forEach(function(element) {
+
+
+  })
+
+}

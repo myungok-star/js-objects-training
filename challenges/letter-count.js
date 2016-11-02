@@ -36,11 +36,15 @@ function letterCount(string) {
 // get the output within {}
   var letters = {};
   // split the string into each letter
-  var characters = string.split("");
-  //go over each element to count 
-  string.forEach(function(element) {
-
-
-  })
-
+  var eachLetter = string.split("");
+  //go over each element to count
+  eachLetter.forEach(function(element) {
+    if(letters[element]) {
+      letters[element] += 1;
+    } else {
+      letters[element] = 1;
+    }
+  });
+  return letters;
 }
+letterCount("apple");
